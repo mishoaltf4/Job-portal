@@ -1,17 +1,23 @@
-<header class="w-full h-25 bg-red-500">
+<header class="w-full h-25 border-b-1 fixed bg-white z-10">
   <div class="container mx-auto">
-    <div class="header-inner flex items-center justify-end">
-      <div class="logo mx-auto">
-        <p>Hello I am a logo</p>
+    <div class="header-inner w-full h-25 flex items-center justify-between max-sm:justify-center">
+      <div class="logo">
+        <span class="text-3xl py-2 px-4 rounded-br-4xl bg-main text-white">Find</span>
+        <span class="text-3xl mx-4">A</span>
+        <span class="text-3xl py-2 px-4 rounded-tl-4xl bg-black text-white">Job</span>
       </div>
-      <nav>
-        <ul>
-          <li>Hllo</li>
-        </ul>
-      </nav>
-      <div class="btns">
-        <button>Login</button>
-        <button>Sign Up</button>
+      <div class="nav-btns flex items-center gap-10">
+        <nav>
+          <ul class="flex gap-4 max-md:hidden">
+            <li>Home</li>
+            <li>About us</li>
+            <li>Contact</li>
+          </ul>
+        </nav>
+        <div class="btns flex gap-4 items-center max-sm:hidden">
+          <a href="#" class="text-main ">Login</a>
+          <button class="bg-main text-white w-30 h-10">Sign Up</button>
+        </div>
       </div>
     </div>
   </div>

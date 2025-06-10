@@ -1,0 +1,16 @@
+.social > ul > li{
+  width: 40px;
+  height: 40px;
+  background-color: #E8ECF1;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all ease 0.3s;
+  cursor: pointer;
+}
+
+.social > ul > li:hover{
+  background-color: var(--color-main);
+  color: white;
+}
