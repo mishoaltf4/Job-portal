@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import {faLinkedin, faPinterest, faSquareFacebook, faTwitter} from '@fortawesome/free-brands-svg-icons';
 

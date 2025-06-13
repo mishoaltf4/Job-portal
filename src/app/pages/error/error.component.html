@@ -1,1 +1,10 @@
-<p>error works!</p>
+<div class="error h-screen mt-[-100px]">
+  <div class="container mx-auto">
+    <div class="error-inner flex flex-col items-center justify-center h-screen gap-4">
+      <h1 class="text-9xl text-main font-bold tracking-widest">Opps!</h1>
+      <h4 class="text-3xl mt-4 font-semibold">Here is some problem</h4>
+      <p class="text-[#7E8890] font-semibold">The page you are looking for it maybe deleted</p>
+      <button class="p-4 bg-main text-white" (click)="goToHome()">Go to Home</button>
+    </div>
+  </div>
+</div>
