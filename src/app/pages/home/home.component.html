@@ -1,36 +1,285 @@
-<div class="home">
-      <div class="hero h-full w-full py-10 bg-bg-secondary">
-        <div class="container mx-auto">
-          <div class="hero-inner w-full h-full flex items-center justify-between gap-4">
-            <div class="content w-1/2 flex flex-col gap-4 max-xl:w-full max-xl:items-center" data-aos="fade-up">
-              <h1 class="w-2/3 max-xl:w-full text-4xl font-bold tracking-wider" data-aos="fade-up" data-aos-duration="1000">Find Your Career to Make a Better Life</h1>
-              <p class="w-2/3 max-xl:w-full" data-aos="fade-up" data-aos-duration="1000">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate debitis ea et laboriosam magnam magni natus quis saepe sunt.</p>
+<div class="home dark:bg-dark-bg">
+  <div
+    class="hero bg-bg-secondary dark:bg-dark-secondary h-full w-full py-10 dark:text-white"
+  >
+    <div class="container">
+      <div
+        class="hero-inner flex h-full w-full items-center justify-between gap-4"
+      >
+        <div
+          class="content flex w-1/2 flex-col gap-4 max-xl:w-full max-xl:items-center"
+          data-aos="fade-up"
+        >
+          <h1
+            class="w-2/3 text-4xl font-bold tracking-wider max-xl:w-full"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            Find Your Career to Make a Better Life
+          </h1>
+          <p
+            class="w-2/3 max-xl:w-full"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. At
+            cupiditate debitis ea et laboriosam magnam magni natus quis saepe
+            sunt.
+          </p>
 
-              <div class="searching w-4/5 max-xl:w-full h-15 bg-white border border-[#e4e5ec] flex items-center px-10 relative" data-aos="fade-up" data-aos-duration="1250">
-                <div class="block relative after:content-[''] after:absolute after:w-[1px] after:h-2/3 after:top-3 after:bg-black">
-                  <p>What</p>
-                  <input type="text" placeholder="what job do you want?">
-                </div>
-                <div class="block ml-5">
-                  <p>where</p>
-                  <input type="text" placeholder="Location">
-                </div>
-                <button class="absolute right-0 px-10 h-full bg-main text-white tracking-widest text-xl">Search</button>
-
-              </div>
-              <div class="popular-links flex items-center gap-4 flex-wrap" data-aos="fade-up" data-aos-duration="1500">
-                <p class="text-main">popular keywords: </p>
-                <ul class="flex gap-2 items-center">
-                  <li>Admin</li>
-                  <li>It</li>
-                  <li>support</li>
-                </ul>
-              </div>
+          <div
+            class="searching dark:bg-dark-bg flex h-full w-4/5 items-center border border-[#e4e5ec] bg-white px-3 max-xl:w-full max-md:flex-col max-md:gap-10 max-md:py-4 dark:border-0"
+            data-aos="fade-up"
+            data-aos-duration="1250"
+          >
+            <div
+              class="relative block after:absolute after:h-2/3 after:w-[1px] after:bg-black after:content-[''] max-md:after:bottom-[-20px] max-md:after:left-0 max-md:after:h-[1px] max-md:after:w-3/4 md:after:top-3"
+            >
+              <p>What</p>
+              <input type="text" placeholder="what job do you want?" />
             </div>
+            <div class="block md:ml-5">
+              <p>where</p>
+              <input type="text" placeholder="Location" />
+            </div>
+            <button
+              class="bg-main h-10 w-30 text-xl tracking-widest text-white md:ml-auto"
+            >
+              Search
+            </button>
+          </div>
+          <div
+            class="popular-links flex flex-wrap items-center gap-4"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
+            <p class="text-main dark:text-bg-secondary">popular keywords:</p>
+            <ul class="flex items-center gap-2">
+              <li>Admin</li>
+              <li>It</li>
+              <li>support</li>
+            </ul>
+          </div>
+        </div>
 
-            <div class="img bg-[url(/home/hero.jpg)] h-200 w-1/2 rounded-bl-[30%] rounded-tr-[30%] max-xl:hidden" data-aos="fade-left" data-aos-duration="1000">
+        <div
+          class="img h-200 w-1/2 rounded-tr-[30%] rounded-bl-[30%] bg-[url(/home/hero.jpg)] max-xl:hidden"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+        ></div>
+      </div>
+    </div>
+  </div>
+
+  <section class="apply-proc bg-main h-full w-full text-white">
+    <div class="container">
+      <div class="apply-proc__inner py-10">
+        <div class="boxes flex max-md:flex-col max-md:gap-10">
+          <div
+            class="box flex w-full gap-4 max-md:justify-center md:flex-col md:items-center"
+          >
+            <div
+              class="icon flex h-15 w-15 items-center justify-center rounded-full border border-dashed border-white text-2xl"
+              data-aos="fade-right"
+              data-aos-duration="500"
+            >
+              <fa-icon [icon]="faUser" />
+            </div>
+            <div class="content flex w-2/3 flex-col gap-4 md:text-center">
+              <h4
+                class="relative text-xl after:absolute after:bottom-[-10px] after:left-0 after:h-[2px] after:w-[60px] after:bg-white after:content-[''] md:after:left-1/2 md:after:translate-x-[-30px]"
+              >
+                Lorem ipsum dolor.
+              </h4>
+              <p class="text-white">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </p>
+            </div>
+          </div>
+          <div
+            class="box flex w-full gap-4 max-md:justify-center md:flex-col md:items-center"
+          >
+            <div
+              class="icon flex h-15 w-15 items-center justify-center rounded-full border border-dashed border-white text-2xl"
+              data-aos="fade-right"
+              data-aos-duration="500"
+            >
+              <fa-icon [icon]="faFile" />
+            </div>
+            <div class="content flex w-2/3 flex-col gap-4 md:text-center">
+              <h4
+                class="relative text-xl after:absolute after:bottom-[-10px] after:left-0 after:h-[2px] after:w-[60px] after:bg-white after:content-[''] md:after:left-1/2 md:after:translate-x-[-30px]"
+              >
+                Lorem ipsum dolor.
+              </h4>
+              <p class="text-white">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </p>
+            </div>
+          </div>
+          <div
+            class="box flex w-full gap-4 max-md:justify-center md:flex-col md:items-center"
+          >
+            <div
+              class="icon flex h-15 w-15 items-center justify-center rounded-full border border-dashed border-white text-2xl"
+              data-aos="fade-right"
+              data-aos-duration="500"
+            >
+              <fa-icon [icon]="faBuilding" class="animate-spin" />
+            </div>
+            <div class="content flex w-2/3 flex-col gap-4 md:text-center">
+              <h4
+                class="relative text-xl after:absolute after:bottom-[-10px] after:left-0 after:h-[2px] after:w-[60px] after:bg-white after:content-[''] md:after:left-1/2 md:after:translate-x-[-30px]"
+              >
+                Lorem ipsum dolor.
+              </h4>
+              <p class="text-white">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </p>
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section
+    class="categories bg-bg-secondary dark:bg-dark-secondary w-full py-10 dark:text-white"
+  >
+    <div class="container">
+      <div class="categories-inner">
+        <div class="title text-center">
+          <h1>Choose Your Desire Category</h1>
+          <p
+            class="before:bg-main relative mx-auto mt-8 w-full before:absolute before:top-0 before:top-[-20px] before:left-[calc(50%-(25%/2))] before:h-1 before:w-1/4 before:content-[''] xl:max-w-2/4"
+          >
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form.
+          </p>
+        </div>
+
+        <div
+          class="blocks dark:bg-dark-bg mt-10 grid h-full w-full cursor-pointer gap-4 bg-white p-10 md:grid-cols-2 xl:grid-cols-4"
+        >
+          <div
+            class="category hover:shadow-light-shadow hover:dark:shadow-dark-shadow flex w-full flex-col items-center justify-center gap-4 border border-dashed border-[#2042e31c] py-10"
+          >
+            <div
+              class="icons flex h-20 w-20 items-center justify-center bg-[#2042e31c]"
+            >
+              <fa-icon [icon]="faGear" class="text-main" size="2xl" />
+            </div>
+            <h3 class="text-2xl font-medium">Title</h3>
+          </div>
+
+          <div
+            class="category hover:shadow-light-shadow hover:dark:shadow-dark-shadow flex w-full flex-col items-center justify-center gap-4 border border-dashed border-[#2042e31c] py-10"
+            data-aos="fade-up"
+            data-aos-duration="1250"
+          >
+            <div
+              class="icons flex h-20 w-20 items-center justify-center bg-[#2042e31c]"
+            >
+              <fa-icon
+                [icon]="faChalkboardTeacher"
+                class="text-main"
+                size="2xl"
+              />
+            </div>
+            <h3 class="text-2xl font-medium">Title</h3>
+          </div>
+
+          <div
+            class="category hover:shadow-light-shadow hover:dark:shadow-dark-shadow flex w-full flex-col items-center justify-center gap-4 border border-dashed border-[#2042e31c] py-10"
+            data-aos="fade-up"
+            data-aos-duration="1250"
+          >
+            <div
+              class="icons flex h-20 w-20 items-center justify-center bg-[#2042e31c]"
+            >
+              <fa-icon [icon]="faHouse" class="text-main" size="2xl" />
+            </div>
+            <h3 class="text-2xl font-medium">Title</h3>
+          </div>
+
+          <div
+            class="category hover:shadow-light-shadow hover:dark:shadow-dark-shadow flex w-full flex-col items-center justify-center gap-4 border border-dashed border-[#2042e31c] py-10"
+            data-aos="fade-up"
+            data-aos-duration="1250"
+          >
+            <div
+              class="icons flex h-20 w-20 items-center justify-center bg-[#2042e31c]"
+            >
+              <fa-icon
+                [icon]="faMagnifyingGlass"
+                class="text-main"
+                size="2xl"
+              />
+            </div>
+            <h3 class="text-2xl font-medium">Title</h3>
+          </div>
+
+          <div
+            class="category hover:shadow-light-shadow hover:dark:shadow-dark-shadow flex w-full flex-col items-center justify-center gap-4 border border-dashed border-[#2042e31c] py-10"
+            data-aos="fade-up"
+            data-aos-duration="1250"
+          >
+            <div
+              class="icons flex h-20 w-20 items-center justify-center bg-[#2042e31c]"
+            >
+              <fa-icon [icon]="faGear" class="text-main" size="2xl" />
+            </div>
+            <h3 class="text-2xl font-medium">Title</h3>
+          </div>
+
+          <div
+            class="category hover:shadow-light-shadow hover:dark:shadow-dark-shadow flex w-full flex-col items-center justify-center gap-4 border border-dashed border-[#2042e31c] py-10"
+            data-aos="fade-up"
+            data-aos-duration="1250"
+          >
+            <div
+              class="icons flex h-20 w-20 items-center justify-center bg-[#2042e31c]"
+            >
+              <fa-icon
+                [icon]="faChalkboardTeacher"
+                class="text-main"
+                size="2xl"
+              />
+            </div>
+            <h3 class="text-2xl font-medium">Title</h3>
+          </div>
+
+          <div
+            class="category hover:shadow-light-shadow hover:dark:shadow-dark-shadow flex w-full flex-col items-center justify-center gap-4 border border-dashed border-[#2042e31c] py-10"
+            data-aos="fade-up"
+            data-aos-duration="1250"
+          >
+            <div
+              class="icons flex h-20 w-20 items-center justify-center bg-[#2042e31c]"
+            >
+              <fa-icon [icon]="faHouse" class="text-main" size="2xl" />
+            </div>
+            <h3 class="text-2xl font-medium">Title</h3>
+          </div>
+
+          <div
+            class="category hover:shadow-light-shadow hover:dark:shadow-dark-shadow flex w-full flex-col items-center justify-center gap-4 border border-dashed border-[#2042e31c] py-10"
+            data-aos="fade-up"
+            data-aos-duration="1250"
+          >
+            <div
+              class="icons flex h-20 w-20 items-center justify-center bg-[#2042e31c]"
+            >
+              <fa-icon
+                [icon]="faMagnifyingGlass"
+                class="text-main"
+                size="2xl"
+              />
+            </div>
+            <h3 class="text-2xl font-medium">Title</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </div>

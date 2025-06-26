@@ -1,22 +1,29 @@
-<header class="w-full h-25 border-b-1 fixed bg-white z-10">
+<header class="dark:bg-dark-bg fixed z-10 h-25 w-full border-b-1 bg-white">
   <div class="container mx-auto">
-    <div class="header-inner w-full h-25 flex items-center justify-between max-sm:justify-center">
+    <div
+      class="header-inner flex h-25 w-full items-center justify-between max-sm:justify-center"
+    >
       <div class="logo">
-        <span class="text-3xl py-2 px-4 rounded-br-4xl bg-main text-white">Find</span>
-        <span class="text-3xl mx-4">A</span>
-        <span class="text-3xl py-2 px-4 rounded-tl-4xl bg-black text-white">Job</span>
+        <span class="bg-main rounded-br-4xl px-4 py-2 text-3xl text-white"
+          >Find</span
+        >
+        <span class="mx-4 text-3xl dark:text-white">A</span>
+        <span
+          class="rounded-tl-4xl bg-black px-4 py-2 text-3xl text-white dark:bg-white dark:text-black"
+          >Job</span
+        >
       </div>
       <div class="nav-btns flex items-center gap-10">
         <nav>
-          <ul class="flex gap-4 max-md:hidden">
+          <ul class="flex gap-4 max-md:hidden dark:text-white">
             <li>Home</li>
             <li>About us</li>
             <li>Contact</li>
           </ul>
         </nav>
-        <div class="btns flex gap-4 items-center max-sm:hidden">
-          <a href="#" class="text-main ">Login</a>
-          <button class="bg-main text-white w-30 h-10">Sign Up</button>
+        <div class="btns flex items-center gap-4 max-sm:hidden">
+          <a href="#" class="text-main">Login</a>
+          <button class="bg-main h-10 w-30 text-white">Sign Up</button>
         </div>
       </div>
     </div>

@@ -1,10 +1,16 @@
-<div class="error h-screen mt-[-100px]">
+<div class="error mt-[-100px] h-screen">
   <div class="container mx-auto">
-    <div class="error-inner flex flex-col items-center justify-center h-screen gap-4">
-      <h1 class="text-9xl text-main font-bold tracking-widest">Opps!</h1>
-      <h4 class="text-3xl mt-4 font-semibold">Here is some problem</h4>
-      <p class="text-[#7E8890] font-semibold">The page you are looking for it maybe deleted</p>
-      <button class="p-4 bg-main text-white" (click)="goToHome()">Go to Home</button>
+    <div
+      class="error-inner flex h-screen flex-col items-center justify-center gap-4"
+    >
+      <h1 class="text-main text-9xl font-bold tracking-widest">Opps!</h1>
+      <h4 class="mt-4 text-3xl font-semibold">Here is some problem</h4>
+      <p class="font-semibold text-[#7E8890]">
+        The page you are looking for it maybe deleted
+      </p>
+      <button class="bg-main p-4 text-white" (click)="goToHome()">
+        Go to Home
+      </button>
     </div>
   </div>
 </div>

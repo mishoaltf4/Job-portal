@@ -1,46 +1,70 @@
-<footer>
+<footer class="dark:bg-dark-bg dark:text-white">
   <div class="container mx-auto">
     <div class="footer-inner">
-      <div class="download border-b-1 border-b-gray-200 py-4 flex items-center justify-between flex-wrap max-md:justify-center gap-10">
+      <div
+        class="download flex flex-wrap items-center justify-between gap-10 border-b-1 border-b-gray-200 py-4 max-md:justify-center"
+      >
         <div class="text w-100 max-md:text-center">
           <h3 class="text-2xl font-semibold">Download Our Best Apps</h3>
-          <p class="text-[17px] mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam cumque deleniti dolor enim excepturi nobis omnis quasi quis veritatis.</p>
+          <p class="mt-4 text-[17px]">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
+            aliquam cumque deleniti dolor enim excepturi nobis omnis quasi quis
+            veritatis.
+          </p>
         </div>
         <div class="btns flex items-center gap-4">
-          <button class="bg-main px-4 py-2 text-white rounded-lg">App store</button>
-          <button class="bg-main px-4 py-2 text-white rounded-lg">Google play</button>
+          <button class="bg-main rounded-lg px-4 py-2 text-white">
+            App store
+          </button>
+          <button class="bg-main rounded-lg px-4 py-2 text-white">
+            Google play
+          </button>
         </div>
       </div>
 
-      <div class="footer-things py-4 flex flex-wrap items-center justify-between max-md:justify-center gap-10">
+      <div
+        class="footer-things flex flex-wrap items-center justify-between gap-10 py-4 max-md:justify-center"
+      >
         <div class="info flex flex-col gap-4 max-md:items-center max-md:px-10">
           <div class="logo">
-            <img src="./logo.svg" alt="" width="150px">
+            <img src="./logo.svg" alt="" width="150px" />
           </div>
 
-          <p class="max-md:text-center max-w-100">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aperiam aspernatur doloribus labore maiores minus odit, perspiciatis praesentium quae quo.</p>
+          <p class="max-w-100 max-md:text-center">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
+            aperiam aspernatur doloribus labore maiores minus odit, perspiciatis
+            praesentium quae quo.
+          </p>
 
           <div class="contact">
             <ul>
-              <li><span class="font-semibold">Address:</span> New York, Ragaca 1337</li>
-              <li><span class="font-semibold">Email:</span> mikheil.jioevi&#64;gau.edu.ge</li>
-              <li><span class="font-semibold">Call:</span> (+995) 555-55-55-55</li>
+              <li>
+                <span class="font-semibold">Address:</span> New York, Ragaca
+                1337
+              </li>
+              <li>
+                <span class="font-semibold">Email:</span>
+                mikheil.jioevi&#64;gau.edu.ge
+              </li>
+              <li>
+                <span class="font-semibold">Call:</span> (+995) 555-55-55-55
+              </li>
             </ul>
           </div>
 
           <div class="social">
-            <ul class="flex gap-4">
-              <li><fa-icon [icon]="faSquareFacebook"/></li>
-              <li><fa-icon [icon]="faTwitter"/></li>
-              <li><fa-icon [icon]="faLinkedin"/></li>
-              <li><fa-icon [icon]="faPinterest"/></li>
+            <ul class="flex gap-4 text-black">
+              <li><fa-icon [icon]="faSquareFacebook" /></li>
+              <li><fa-icon [icon]="faTwitter" /></li>
+              <li><fa-icon [icon]="faLinkedin" /></li>
+              <li><fa-icon [icon]="faPinterest" /></li>
             </ul>
           </div>
         </div>
 
-        <div class="for-side flex gap-6 flex-wrap">
+        <div class="for-side flex flex-wrap gap-6">
           <div class="candidates">
-            <h3 class="text-2xl font-semibold mb-5">For Candidates</h3>
+            <h3 class="mb-5 text-2xl font-semibold">For Candidates</h3>
             <ul class="flex flex-col gap-3 text-[#7E8890]">
               <li>Page url</li>
               <li>Page url</li>
@@ -52,7 +76,7 @@
           </div>
 
           <div class="employers">
-            <h3 class="text-2xl font-semibold mb-5">For Employers</h3>
+            <h3 class="mb-5 text-2xl font-semibold">For Employers</h3>
             <ul class="flex flex-col gap-3 text-[#7E8890]">
               <li>Page url</li>
               <li>Page url</li>
@@ -66,9 +90,19 @@
 
         <div class="letter flex flex-col gap-4">
           <h3 class="text-2xl font-semibold">Join Our Newsletter</h3>
-          <p class="text-[#7E8890]">Subscribe to get the latest jobs posted, candidates...</p>
-          <input type="text" class="w-full h-15 border border-[#7E8890] placeholder:text-[#7E8890] text-xl pl-4" placeholder="Your Email ...">
-          <button class="w-full h-15 bg-main text-white font-semibold rounded-sm">Subscribe now</button>
+          <p class="text-[#7E8890]">
+            Subscribe to get the latest jobs posted, candidates...
+          </p>
+          <input
+            type="text"
+            class="h-15 w-full border border-[#7E8890] pl-4 text-xl placeholder:text-[#7E8890]"
+            placeholder="Your Email ..."
+          />
+          <button
+            class="bg-main h-15 w-full rounded-sm font-semibold text-white"
+          >
+            Subscribe now
+          </button>
         </div>
       </div>
     </div>

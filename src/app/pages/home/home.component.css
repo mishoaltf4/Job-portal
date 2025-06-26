@@ -1,10 +1,10 @@
-.hero-inner > .img{
+.hero-inner > .img {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.popular-links > ul > li{
+.popular-links > ul > li {
   padding: 0 7px;
   color: #999;
   border: 1px solid #e4e5ec;
@@ -15,7 +15,28 @@
   transition: all ease 0.3s;
 }
 
-.popular-links > ul > li:hover{
+.popular-links > ul > li:hover {
   background-color: var(--color-main);
   color: #fff;
+}
+
+.icon {
+  transition: all 0.3s ease;
+}
+
+.icon:hover {
+  background-color: white;
+  color: var(--color-main);
+}
+
+.icon:hover fa-icon {
+  animation: spin 0.3s ease-in-out;
+}
+
+.icon fa-icon {
+  animation: spin;
+}
+
+.blocks > .category {
+  transition: all 0.3s ease;
 }

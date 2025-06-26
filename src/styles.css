@@ -1,25 +1,74 @@
 @import "tailwindcss";
 
-@theme{
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
   --color-main: #2042e3;
   --color-bg-secondary: #f6f9fc;
+
+  --color-dark-bg: #000011;
+  --color-dark-secondary: #1a1b2e;
+
+  --shadow-light-shadow: 0 1rem 3rem rgba(35, 38, 45, 0.15) !important;
+  --shadow-dark-shadow: 0 1rem 3rem rgba(255, 255, 255, 0.15) !important;
+
+  --animate-spin-back: spin-back 0.3s ease infinite;
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes spin-back {
+    0% {
+      transform: rotate(360deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
 }
 
 @layer base {
-  p{
-    color: #7E8890;
+  p {
+    color: #7e8890;
     font-size: 18px;
   }
 
- *{
-   padding: 0;
-   margin: 0;
-   box-sizing: border-box;
-   font-family: "Inter", sans-serif;
- }
+  .darkCategoryShadow {
+    box-shadow: 0 1rem 3rem rgba(255, 255, 255, 0.15) !important;
+  }
+
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    transition:
+      background-color 0.3s ease,
+      color 0.3s ease;
+  }
+
+  .container {
+    margin: 0 auto;
+  }
+
+  .sup_box__rotation {
+    transform: rotate(360deg);
+    background-color: #fff;
+    color: var(--color-main);
+  }
+
+  h1 {
+    font-size: 40px;
+    font-weight: bold;
+  }
 }
 
-
-button{
+button {
   cursor: pointer;
 }
